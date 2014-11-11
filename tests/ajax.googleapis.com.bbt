@@ -1,0 +1,45 @@
+#################
+# general setup #
+#################
+
+setup.script = http://ajax.googleapis.com/ajax/services/search/web
+
+# GET, POST method
+setup.method = GET                                 
+
+# wrap request parameter in json
+setup.request.wrapinjson = false
+
+# name of parameter where to put json
+# setup.request.wrapinjson.parameter = empty | parameter name;
+
+#####################
+# request parameter #
+#####################
+request.v : string = ${args.version}
+request.q : string = ${args.query} 
+
+#######################
+# response validation #
+#######################
+response.responseStatus: integer                		; p == 200
+response.responseData: object
+response.responseData.results: object[]
+response.responseData.results[]: object[]
+response.responseData.results[].GsearchResultClass: string
+response.responseData.results[].unescapedUrl: string
+response.responseData.results[].url: string
+response.responseData.results[].visibleUrl: string
+response.responseData.results[].cacheUrl: string
+response.responseData.results[].title: string
+response.responseData.results[].titleNoFormatting: string
+response.responseData.results[].content: string
+response.responseData.cursor: object
+response.responseData.cursor.resultCount: string
+response.responseData.cursor.estimatedResultCount: string
+response.responseData.cursor.currentPageIndex: integer
+response.responseData.cursor.moreResultsUrl: string
+response.responseData.cursor.searchResultTime: string
+response.responseData.cursor.pages : object[]
+response.responseData.cursor.pages[].start: string
+response.responseData.cursor.pages[].label: integer
