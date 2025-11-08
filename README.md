@@ -1,5 +1,4 @@
 1. BBT
-=========
 
 1.1 What is it?
 
@@ -23,3 +22,7 @@
 1.4 Requirements
 
 	JSON for JAVA, see http://www.json.org/java/
+
+1.5. How to support?
+
+I have to pay my bills and beer, so if you have any use for this open source project, like educational, productive or fun, ..., consider a donation here [PayPal - currently disfunctional - was https://www.paypal.me/andreasdrewke], here [GitHub Sponsors](https://github.com/sponsors/andreasdr) or via [Amazon Wishlist](https://www.amazon.de/hz/wishlist/ls/250IBUL4JSZVR?ref_=wl_share).
